@@ -1,4 +1,4 @@
-#
+ #
 #   This is the core configuration for a configuration service.  I have two examples here:
 #
 #       -  A configuration service which completelty loads the configuration for the services
@@ -18,8 +18,9 @@ spring:
       server:
         encrypt.enabled: false
         git:
-          uri: https://github.com/carnellj/config-repo/
-          searchPaths: licensingservice,organizationservice
+          uri: https://github.com/arribajim/app-config-repo/
+          default-label: main
+          searchPaths: licensingservice,organizationservice,guidewireservice
           username: native-cloud-apps
           password: 0ffended
 
